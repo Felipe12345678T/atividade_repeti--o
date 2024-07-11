@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 atividade repetição</title>
+</head>
+<body>
+    <h1>Numeros impares entre 150 e 300</h1>
+    <div id="resultado"></div>
+ 
+    <script src="2atividade_repetição.script.js"></script>
+</body>
+</html>
+<script>
+    function impares() {
+    var resultado = document.getElementById("resultado");
+    var html ='';
+    for (var contador = 150; contador <= 300; contador++) {
+        if (contador % 2 != 0) {
+            html += contador + "; "
+        }
+    }
+    resultado.innerHTML += html;
+}
+impares();
+</script>

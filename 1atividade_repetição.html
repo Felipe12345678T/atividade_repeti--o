@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 atividade repetição</title>
+</head>
+  <body>
+    <h1></h1>
+    <button onclick="maiorMenor()">Clique no botão</button>
+    <div id="maiorMenor"></div>   
+  </body>
+</html>
+<script>
+    function maiorMenor() {
+    var maiorMenor = document.getElementById("maiorMenor");
+    var maior = 0;
+    var menor = -Infinity;
+    for (var cont = 0; cont < 20; cont++) {
+        var numero = parseInt(prompt("Digite um valor"));
+        if (numero > maior) {
+            maior = numero;
+        }
+        else if (numero < menor) {
+            menor = numero;
+        }
+    }
+    maiorMenor.innerHTML = "O maior número digitado é: " + maior + ". <br/>" +
+        "O menor número digitado é: " + menor + ". <br/>";
+}
+</script>
